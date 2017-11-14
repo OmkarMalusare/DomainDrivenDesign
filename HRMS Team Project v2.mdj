@@ -13980,7 +13980,7 @@
 											"visibility": "public"
 										}
 									],
-									"documentation": "Description: A new employee is hired by the organization, and a record including relevant personal data is created\nPriority: High\nRisk: Low\nMain scenario:  A new employee is successfully hired",
+									"documentation": "Description: A new employee is hired by the organization, and a record including relevant personal data is created\nActor: HR Specialist\nPriority: High\nRisk: Low\nMain scenario:  A new employee is successfully hired",
 									"visibility": "public",
 									"isAbstract": false,
 									"isFinalSpecialization": false,
