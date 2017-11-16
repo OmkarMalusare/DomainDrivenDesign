@@ -7,20 +7,31 @@
 
 <body>
 <h1><center>Personnel Use Case Elaborations</center></h1>
-<p>UsecaseID: hire employee </p>
+<p>UsecaseID: hire employee</p>
 <p>Description: A new employee is hired by the organization, and a record including relevant personal data is created<br />
-Actors: HR Specialist<br />Priority: High <br />Risk: Low  <br />Main scenario:  A new employee is successfully hired</p>
-<p>UseCaseID: fire employee</p>
-<p>Description: An employee is fired (terminated) from the organization<br />Actor: HR Specialist <br />
+  Actors: HR Specialist<br />
+  Priority: High <br />
+  Risk: Low <br />
+  Main Scenario: <br />
+  HR Specialist: Analyses whether there is a lack of available resources or need for more resources<br />
+  HR Specialist:  Sends out job opening mailers to the recruitment team.<br />
+  HR Specialist: Hires an employee who would be a best fit for the role.</p>
+<p>UseCaseID: terminate employee</p>
+<p>Description: An employee is terminated from the organization<br />
+  Actor: HR Specialist <br />
   Priority: High<br />
   Risk: Medium<br />
   Main scenario: An employee is successfully fired from the organization<br />
-Alternate scenario 1: An employee is accidentally or wrongfully fired </p>
+Alternate scenario 1: An employee is accidentally or wrongfully fired</p>
 <p>UseCaseID: grant employee leave</p>
-<p>Description: An employee is granted leave, e.g. vacation time, sick leave<br />Actor: HR Specialist<br/>
+<p>Description: An employee is granted leave, e.g. vacation time, sick leave<br />
+  Actor: HR Specialist<br />
   Priority: High<br />
   Risk: Low<br />
-Main scenario: The employee is successfully granted leave </p>
+  Main scenario: <br />
+  HR Specialist: Reads the employee leave request<br />
+  HR Specialist: Checks the pending leaves of an employee<br />
+HR Specialist: Grants leave to employee</p>
 <p>UseCaseID: promote employee</p>
 <p>Description: An employees is promoted, i.e. their standing or rank in the company is increased<br />Actor: HR Specialist<br />
   Priority: High<br />
@@ -32,15 +43,19 @@ Main scenario: An employee is successfully promoted </p>
   Risk: Low<br />
 Main scenario: An employee is successfully demoted </p>
 <p>UseCaseID: transfer employee</p>
-<p>Description: An employee is transferred from one unit within the organization to another<br />Actor: HR Specialist<br/>
+<p>Description: An employee is transferred from one unit within the organization to another<br />
+  Actor: HR Specialist<br />
   Priority:Medium<br />
   Risk: Low<br />
-Main scenario: An employee is successfully transferred to another unit </p>
+  Main scenario: <br />
+  HR Specialist: Reads the transfer request.<br />
+  HR Specialist: Analyses the Organization's requirement or Employee's wish for the transfer to happen and takes decision accordingly.<br />
+HR Specialist:An employee is successfully transferred to another unit</p>
 <p>UseCaseID: add employee dependent</p>
-<p>Description: One or more dependents of an employee are added to the employee's record<br />Actor: HR Specialist<br />
+<p>Description: One or more dependents of an employee are added to the employee's record<br />
   Priority: Medium<br />
   Risk: Low<br />
-Main scenario: One or more dependents of the employee are successfully added to the employee's record </p>
+Main scenario: One or more dependents of the employee are successfully added to the employee's record</p>
 <p>UseCaseID: create employee Record</p>
 <p>Description: A record containing an employee's information is created for use by the organization<br />
   Priority: High<br />
@@ -51,23 +66,32 @@ Main scenario: A record containing the employee's information is successfully cr
   Priority: High<br />
   Risk: Medium<br />
 Main scenario: An employee's record is successfully updated</p>
-<p>UseCaseID: write performance evaluation</p>
-<p>Description: The supervisor fills out a record of the employee's performance in the organization thus far<br />Actor: Supervisor<br/>
+<p>UseCaseID: submit performance evaluation</p>
+<p>Description: The supervisor fills out a record of the employee's performance in the organization thus far<br />
+  Actor: Supervisor<br />
   Priority: Medium<br />
   Risk: Low<br />
-Main scenario: The supervisor successfully fills out the performance evaluation for a given employee   </p>
+  Main scenario: <br />
+  Supervisor: Grades the employee on the basis of his/her duties and tasks delivered.<br />
+  Supervisor: Fills the performance evaluation form for an employee<br />
+Supervisor: Submits the performance evaluation successfully.</p>
 <p>UseCaseID: assign payroll account</p>
-<p>Description: A payroll account is assigned to the employee -- this is how they receive their salary<br />Actor: HR Specialist and Account Management System<br/>
+<p>Description: A payroll account is assigned to the employee -- this is how they receive their salary<br />
+  Actor: HR Specialist and Account Management System<br />
   Priority: High<br />
   Risk: Medium<br />
   Main scenario: A payroll account is successfully assigned to an employee<br />
-Alternate scenario 1: An error occurs on the part of the AMS and the account is not assigned </p>
+Alternate scenario 1: An error occurs on the part of the AMS and the account is not assigned</p>
 <p>Use Case ID: pay employee</p>
-<p>Description: The employee is payed for their work at the organization<br />Actor: HR Specialist and Account Management System<br />
+<p>Description: The employee is payed for their work at the organization<br />
+  Actor: HR Specialist and Account Management System<br />
   Priority: High<br />
   Risk: Medium<br />
-  Main scenario: The employee is successfully paid the amount they are owed<br />
-Alternate scenario 1: The employee is paid an incorrect amount or not paid </p>
+  Main scenario: <br />
+  HR Specialist: Raises a request to accept the salary of an employee into the payroll account.<br />
+  AMS: Accepts the request.<br />
+  HR Specialist: Successfully makes the payment.<br />
+Alternate scenario 1: The employee is paid an incorrect amount or not paid</p>
 <p>UseCaseID: view performance evaluation</p>
 <p>Description: An employee views any performance evaluations that may have been written about them<br/>Actor: Employee<br />
   Priority: Medium<br />
@@ -79,9 +103,13 @@ Main scenario: The employee successfully views their performance evaluation(s) <
   Risk: Low<br />
 Main scenario: The HR manager successfully creates a new performance evaluation template </p>
 <p>UseCaseID: determine salary</p>
-<p>Description: The salary amount to be paid to an employee is determined and added to their record<br />Actor: HR Specialist<br/>
+<p>Description: The salary amount to be paid to an employee is determined and added to their record<br />
+  Actor: HR Specialist<br />
   Priority: Medium<br />
   Risk: Low<br />
-Main scenario: An employee's salary is successfully added to their record </p>
+  Main scenario:<br />
+  HR Specialist: Considers the base salary for the position<br />
+  HR Specialist: Considers appraisals of the employee<br />
+HR Specialist: Determines salary for employee and HRMS updates the record</p>
 </body>
 </html>

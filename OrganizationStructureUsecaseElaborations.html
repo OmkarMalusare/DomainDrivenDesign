@@ -9,16 +9,21 @@
 <center><h1>Organization Structure Use-case Elaborations </h1></center>
 
 <p>UseCaseID: view org chart</p>
-<p>Description: View a chart showing the structure/hierarchy of the organization, including units, unit heads, etc. This can be viewed by company employees as well as the general public.<br />Actor: employee and guest<br />
+<p>Description: View a chart showing the structure/hierarchy of the organization, including units, unit heads, etc. This can be viewed by company employees as well as the general public.<br />
+  Actor: employee and guest<br />
   Priority: Medium<br />
   Risk: Low<br />
-Main scenario: The org chart is successfully viewed by the employee or guest </p>
+Main scenario: The org chart is successfully viewed by the employee or guest</p>
 <p>UseCaseID: create unit</p>
-<p>Description: A new unit within the organization is created, e.g. department, college. A unit can have parents, subsidiaries, a head and positions.<br />Actor: HR Specialist<br/>
+<p>Actor:  HR Specialist<br />
+  Description: A new unit within the organization is created, e.g. department, college. A unit can have parents, subsidiaries, a head and positions.<br />
   Priority: High<br />
   Risk: Medium<br />
-  Main scenario: The new unit is successfully created<br />
-Alternate scenario 1: The new unit could not be created (no funds, etc) </p>
+  Main scenario:<br />
+  HR Specialist:  Views the Organizational Chart.<br />
+  HR Specialist: Analyses the requirements by the CEO<br />
+  HR Specialist: Creates a new unit  successfully.<br />
+</p>
 <p>UseCaseID: dissolve unit head</p>
 <p>Description: Remove an existing  unit within the organization.<br />Actor: HR Specialist<br/>
   Priority: High<br />
@@ -31,15 +36,24 @@ Alternate scenario 1: A unit is wrongly dissolved </p>
   Risk: Low<br />
 Main scenario: The parent unit is successfully set for the given unit </p>
 <p>UseCaseID: add unit subsidiary</p>
-<p>Description: Add one or more subsidiary units to a given unit.<br />Actor: HR Specialist<br/>
+<p>Description: Add one or more subsidiary units to a given unit.<br />
+  Actor: HR Specialist<br />
   Priority: Medium<br />
   Risk: Low<br />
-Main scenario: A subsidiary unit of the given unit is successfully added </p>
+  Main scenario:<br />
+  HR Specialist:  Views the Organizational Chart.<br />
+  HR Specialist: Analyses the requirements bf the CEO <br />
+HR Specialist: Creates a new subsidiary to a unit  successfully.</p>
 <p>UseCaseID: assign position</p>
-<p>Description: Assign one or more positions (e.g. administrator, technician) to a unit<br />Actor: HR Specialist<br/>
+<p>Description: Assign one or more positions (e.g. administrator, technician) to a unit<br />
   Priority: High<br />
   Risk: Low<br />
-Main scenario: A position is successfully assigned to the unit </p>
+  Main scenario:<br />
+  HR Specialist: Figure out the resources available.<br />
+  HR Specialist: Set base salary for new position to be added.<br />
+  HR Specialist: Determine the best possible fit for position.<br />
+  HR Specialist: Assign employee to that position<br />
+</p>
 <p>UseCaseID: remove position</p>
 <p>Description: Remove an existing position from the unit.<br />Actor: HR Specialist<br/>
   Priority: High<br />
@@ -57,5 +71,12 @@ Main scenario: The head of the unit is successfully assigned </p>
   Risk: Medium<br />
   Main scenario: A subsidiary unit is successfully removed<br />
 Alternate scenario 1: A subsidiary unit is wrongly remove </p>
+<p>UseCaseID: link account</p>
+<p>Actor: Account Management System<br />
+  Description: Links the unit with an account in the AMS for management of operating funds.<br />
+  Priority: High<br />
+  Risk: Medium<br />
+  Main scenario: An account from the AMS is successfully linked with the unit<br />
+Alternate scenario 1: The unit could not be link with an account from the AMS </p>
 </body>
 </html>

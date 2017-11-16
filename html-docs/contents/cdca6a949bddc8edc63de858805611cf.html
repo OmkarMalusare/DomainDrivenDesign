@@ -66,10 +66,15 @@
                 <h3>Description</h3>
                 <div>
                     
-                        <p>Description: An employee is granted leave, e.g. vacation time, sick leave
+                        <p>UseCaseID: grant employee leave
+Description: An employee is granted leave, e.g. vacation time, sick leave
+Actor: HR Specialist
 Priority: High
 Risk: Low
-Main scenario: The employee is successfully granted leave</p>
+Main scenario: 
+HR Specialist: Reads the employee leave request
+HR Specialist: Checks the pending leaves of an employee
+HR Specialist: Grants leave to employee</p>
                     
                 </div>
             </section>
@@ -92,6 +97,15 @@ Main scenario: The employee is successfully granted leave</p>
             
                 
                 
+<section class="element-list">
+    <h3>Generalized Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='4d7aaadca4329acf11eef99e344a093c.html'><span class='node-icon _icon-UMLUseCase'></span>add action</a></li>
+        
+    </ul>
+</section>
+
 
 
                 
@@ -132,15 +146,6 @@ Main scenario: The employee is successfully granted leave</p>
             
                 
                 
-<section class="element-list">
-    <h3>Actors</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='49eb19408e9e49fa9dd99857ddd0106b.html'><span class='node-icon _icon-UMLActor'></span>HR Specialist</a></li>
-        
-    </ul>
-</section>
-
 
 
                 
@@ -364,7 +369,7 @@ Main scenario: The employee is successfully granted leave</p>
         
         <li><a href='f91f07b8bb5321ce84ebf9bb4cefc65c.html'><span class='node-icon _icon-UMLInclude'></span>(grant employee leave→update employee record)</a></li>
         
-        <li><a href='b3b4dcda1dce133a4385d47c4227efa6.html'><span class='node-icon _icon-UMLAssociation'></span>(HR Specialist—grant employee leave)</a></li>
+        <li><a href='91902f621276f0b053abc827de56af95.html'><span class='node-icon _icon-UMLGeneralization'></span>(grant employee leave→add action)</a></li>
         
     </ul>
 </section>
@@ -380,6 +385,8 @@ Main scenario: The employee is successfully granted leave</p>
     <ul class="nav nav-list">
         
         <li><a href='f91f07b8bb5321ce84ebf9bb4cefc65c.html'><span class='node-icon _icon-UMLInclude'></span>(grant employee leave→update employee record)</a></li>
+        
+        <li><a href='91902f621276f0b053abc827de56af95.html'><span class='node-icon _icon-UMLGeneralization'></span>(grant employee leave→add action)</a></li>
         
     </ul>
 </section>
